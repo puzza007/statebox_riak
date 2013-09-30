@@ -31,6 +31,7 @@
           deserialize=fun ?MODULE:deserialize/1 :: deserialize_fun()}).
 
 -opaque statebox_riak() :: #statebox_riak{}.
+-export_type([statebox_riak/0]).
 -type option() :: {get, get_fun()} |
                   {put, put_fun()} |
                   {from_values, from_values_fun()} |
